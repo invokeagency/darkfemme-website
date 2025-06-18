@@ -8,5 +8,10 @@ export default defineConfig({
   base: '/darkfemme-website/',
   build: {
     outDir: 'docs'
+  },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src')
+    }
   }
 }) 
