@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && cp CNAME docs/",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && git add docs && git commit -m 'deploy: update GitHub Pages'"
+    "deploy": "npm run build && git add docs && git commit -m 'deploy: update production build' && git push"
   },
   "dependencies": {
     "core-js": "^3.8.3",
